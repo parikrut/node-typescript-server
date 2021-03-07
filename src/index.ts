@@ -38,7 +38,7 @@ const options = {
     },
 };
 server.listen(PORT, () => {
-    console.log(`Server Running on Port ${PORT}`);
+    // console.log(`Server Running on Port ${PORT}`);
 });
 
 import redis from 'redis'
@@ -51,13 +51,13 @@ let redisClient = redis.createClient({
 });
 // Initialized Redis
 redisClient.on('error', function (err) {
-    console.log('Could not establish a connection with redis. ' + err);
+    // console.log('Could not establish a connection with redis. ' + err);
 });
 redisClient.on('ready', () => {
-    console.log("Redis is ready.")
+    // console.log("Redis is ready.")
 })
 redisClient.on('connect', function (err) {
-    console.log('Connected to redis successfully');
+    // console.log('Connected to redis successfully');
 });
 // Configure session middleware
 app.use(session({

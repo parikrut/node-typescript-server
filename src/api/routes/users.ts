@@ -13,5 +13,5 @@ export default (app : any) => {
     router.post('/signup', asyncHandler(UsersController.signupUser));
     router.get('/login', asyncHandler(UsersController.loginUser));
     router.get('/logout', asyncHandler(UsersController.logoutUser));
-    router.post('/retweet/:UserID', asyncHandler(UsersController.retweet));
+    router.post('/retweet/:UserID',verifyAuthentication, asyncHandler(UsersController.retweet));
 };

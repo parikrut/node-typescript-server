@@ -46,7 +46,7 @@ class UsersController {
         }).catch(err => {
             // If user already exists
             if (err.code === 11000) {
-                return sendStatus(res, "error", "Email is already exist", 401)
+                return sendStatus(res, "error", "Username is already exist", 401)
             }
         });
 

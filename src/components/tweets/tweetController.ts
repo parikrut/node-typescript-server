@@ -30,7 +30,7 @@ class TweetController {
             if (tweets.length == 0) {
                 return sendStatus(res, "error", "No tweets found", 404);
             }
-            res.json(tweets);
+            res.status(200).json(tweets);
         } catch (error) {
             return sendStatus(res, "error", "Can not able to find user", 400)
         }
@@ -47,7 +47,7 @@ class TweetController {
             if (tweets.length == 0) {
                 return sendStatus(res, "error", "No tweets found", 404);
             }
-            res.json(tweets);
+            res.status(200).json(tweets);
         } catch (error) {
             return sendStatus(res, "error", "Can not able to find Tweet", 400)
         }
