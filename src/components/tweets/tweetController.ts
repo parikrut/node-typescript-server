@@ -1,4 +1,3 @@
-import e from 'express';
 import Tweet from './tweet';
 // Function to send response to the user
 const sendStatus = async function (res: any, status: string, message: string, code: number) {
