@@ -31,8 +31,8 @@
 - **src/components** - Contains all Model and Core Controllers logic.
 
 ## Api End points
-- **/** - Welcome to krutik backend
-- 
+- `GET` **/** - Welcome to krutik backend
+ 
 #### User endpoints
 - `GET` **/users/** - List all the users
 - `POST` **/users/signup** - Signup user
