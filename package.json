@@ -6,7 +6,7 @@
   "scripts": {
     "test": "env-cmd -f ./config/test.env jest --watch",
     "build": "rimraf ./build && tsc",
-    "start": "env-cmd -f ./config/dev.env npm run build && node build/index.js",
+    "start": "env-cmd -f ./config/dev.env node build/index.js",
     "start:dev": "env-cmd -f ./config/dev.env nodemon",
     "start:redis": "redis-server"
   },
