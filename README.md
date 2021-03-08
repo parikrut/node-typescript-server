@@ -1,5 +1,5 @@
 # Node backend
-=========
+
 #### Created Rest-Api server with Express, Typescript and MongoDB
 
 ## Technologies Used:
